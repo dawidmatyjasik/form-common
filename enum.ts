@@ -6,6 +6,7 @@ export const enum personalEnum {
     placeOfBirth ="placeOfBirth",
     gender ="gender",
     phoneNumber ="phoneNumber",
+    email="email",
     zipCode ="zipCode",
     city ="city",
     street ="street",

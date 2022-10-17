@@ -56,6 +56,12 @@ export const personalSchema = [
         type: 'tel',
     },
     {
+        name: personalEnum.email,
+        label: 'Email',
+        Component: FormField,
+        type: 'email',
+    },
+    {
         name: personalEnum.zipCode,
         label: 'Kod pocztowy',
         Component: FormField,

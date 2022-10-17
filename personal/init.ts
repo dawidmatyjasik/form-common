@@ -8,6 +8,7 @@ export const personalInit = {
     [personalEnum.placeOfBirth]: "",
     [personalEnum.gender]: "",
     [personalEnum.phoneNumber]: "",
+    [personalEnum.email]: "",
     [personalEnum.zipCode]: "",
     [personalEnum.city]: "",
     [personalEnum.street]: "",

@@ -1,11 +1,11 @@
-import { FormSelect } from "../../components/Forms/FormSelect";
-import { FormField } from "../../components/Forms/FormField";
 import { personalEnum } from "../enum";
-import { assignedProject, gender } from "../../data/data";
-import { FormRadio } from "../../components/Forms/FormRadio";
-import { FormSwitch } from "../../components/Forms/FormSwitch";
-import { FormConditionalTextField } from "../../components/Forms/FormConditionalTextField";
-import { FormDatePicker } from "../../components/Forms/FormDatePicker";
+import { FormSelect } from "../../frontend/src/components/Forms/FormSelect";
+import { FormField } from "../../frontend/src/components/Forms/FormField";
+import { assignedProject, gender } from "../../frontend/src/data/data";
+import { FormRadio } from "../../frontend/src/components/Forms/FormRadio";
+import { FormSwitch } from "../../frontend/src/components/Forms/FormSwitch";
+import { FormConditionalTextField } from "../../frontend/src/components/Forms/FormConditionalTextField";
+import { FormDatePicker } from "../../frontend/src/components/Forms/FormDatePicker";
 
 export const personalSchema = [
     {

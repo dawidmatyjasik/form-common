@@ -1,4 +1,4 @@
-export const HttpStatusCode = {
+const HttpStatusCode = {
     Continue: 100,
     SwitchingProtocols: 101,
     Processing: 102,
@@ -39,3 +39,5 @@ export const HttpStatusCode = {
     WrongValidation: 850,
     UserNotFound: 851
 }
+
+module.exports = { HttpStatusCode }

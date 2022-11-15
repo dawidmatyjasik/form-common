@@ -1,4 +1,4 @@
-export const HttpStatusCode = {
+const HttpStatusCode = {
     Continue: 100,
     SwitchingProtocols: 101,
     Processing: 102,
@@ -37,5 +37,15 @@ export const HttpStatusCode = {
     GatewayTimeout: 504,
     HttpVersionNotSupported: 505,
     WrongValidation: 850,
-    UserNotFound: 851
+    UserNotFound: 851,
+    UniqueConstraint: 852,
+    ProjectNotFound: 853,
+    ObjectNotFound: 854,
+    UniqueNotPreserved: 855,
+    UserAlreadyExist: 856,
+    AllValuesNotProvided: 857,
+    WrongPassword: 858,
+    UserNotExist: 859
 }
+
+module.exports = { HttpStatusCode }

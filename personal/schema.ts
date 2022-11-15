@@ -91,7 +91,7 @@ export const personalSchema = [
         label: 'Przyczyna wpisania na czarną listę',
         Component: FormConditionalTextField,
         componentProps: {
-            referer: personalEnum.blackList,
+            referer: [personalEnum.blackList],
         },
     }, 
        {

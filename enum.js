@@ -35,7 +35,7 @@ export const personalEnum = {
   rural_area: "rural_area",
 };
 
-export const componentEnum = {
+export const ComponentEnum = {
   FormInput: "FormInput",
   FormCheckbox: "FormCheckbox",
   FormConditionalTextField: "FormConditionalTextField",

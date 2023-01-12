@@ -3,8 +3,5 @@
   "dependencies": {
     "yup": "^0.32.11",
     "zod": "^3.20.2"
-  },
-  "devDependencies": {
-    "typescript": "^4.9.4"
   }
 }

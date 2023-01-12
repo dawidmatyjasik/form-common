@@ -35,6 +35,11 @@ export const personalEnum = {
   rural_area: "rural_area",
 };
 
+export const loginEnum = {
+  email: "email",
+  password: "password",
+};
+
 export const ComponentEnum = {
   FormInput: "FormInput",
   FormCheckbox: "FormCheckbox",

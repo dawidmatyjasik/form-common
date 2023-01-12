@@ -113,7 +113,7 @@ export const personalSchema = [
   {
     component: ComponentEnum.FormSwitch,
     label: "Zgoda na elektroniczną wysyłkę ZUS RMUA",
-    name: personalEnum.shiping_agreement,
+    name: personalEnum.shipping_agreement,
   },
   {
     component: ComponentEnum.FormSwitch,

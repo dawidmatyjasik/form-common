@@ -1,9 +1,9 @@
 const PERSONAL_ROUTES = Object.freeze({
-  GET: "/personal/:id",
-  POST: "/personal/:id",
-  GET_ALL: "/personal/all",
-  DELETE: "/personal/delete/:id",
-  UPDATE: "/personal/update/:id",
+  GET: "/personal/get",
+  POST: "/personal/post",
+  GET_ALL: "/personal/getAll",
+  DELETE: "/personal/delete",
+  UPDATE: "/personal/update",
 });
 
 export const ROUTES = Object.freeze({

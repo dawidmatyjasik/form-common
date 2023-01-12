@@ -26,7 +26,7 @@ export const personalEnum = {
   mailing_voivodeship: "mailing_voivodeship",
   black_list: "black_list",
   marketing_agreement: "marketing_agreement",
-  shiping_agreement: "shiping_agreement",
+  shipping_agreement: "shipping_agreement",
   assigned_project: "assigned_project",
   sub_region: "sub_region",
   osi: "osi",

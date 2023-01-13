@@ -1,5 +1,6 @@
 import { ComponentEnum, personalEnum } from "../enum";
 import { gender, mailing, projects } from "../mocks";
+import { referer } from "../utils";
 
 export const personalSchema = [
   {
@@ -93,6 +94,64 @@ export const personalSchema = [
     label: "Adres korespondencyjny",
     name: personalEnum.mailing_address,
     options: mailing,
+    yesNo: true,
+  },
+  {
+    component: ComponentEnum.FormInput,
+    label: "Ulica",
+    name: personalEnum.mailing_street,
+    referer,
+    refs: [personalEnum.mailing_address],
+  },
+  {
+    component: ComponentEnum.FormInput,
+    label: "Numer domu",
+    name: personalEnum.mailing_street_number,
+    referer,
+    refs: [personalEnum.mailing_address],
+  },
+  {
+    component: ComponentEnum.FormInput,
+    label: "Numer lokalu",
+    name: personalEnum.mailing_apartment_number,
+    referer,
+    refs: [personalEnum.mailing_address],
+  },
+  {
+    component: ComponentEnum.FormInput,
+    label: "Miejscowość",
+    name: personalEnum.mailing_city,
+    referer,
+    refs: [personalEnum.mailing_address],
+  },
+  {
+    component: ComponentEnum.FormInputMask,
+    label: "Kod pocztowy",
+    name: personalEnum.mailing_zip_code,
+    mask: "99-999",
+    referer,
+    refs: [personalEnum.mailing_address],
+  },
+  {
+    component: ComponentEnum.FormInput,
+    label: "Powiat",
+    name: personalEnum.mailing_county,
+    referer,
+    refs: [personalEnum.mailing_address],
+  },
+  {
+    component: ComponentEnum.FormInput,
+    label: "Gmina",
+    name: personalEnum.mailing_community,
+    referer,
+    refs: [personalEnum.mailing_address],
+  },
+  {
+    component: ComponentEnum.FormInput,
+    label: "Województwo",
+    name: personalEnum.mailing_voivodeship,
+    referer,
+    refs: [personalEnum.mailing_address],
   },
   {
     component: ComponentEnum.FormSelect,

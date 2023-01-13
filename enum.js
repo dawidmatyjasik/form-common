@@ -208,3 +208,43 @@ export const internshipEnum = {
   internship_certificate: "internship_certificate",
   return_of_medical_examination: "return_of_medical_examination",
 };
+
+export const takingUpEmploymentEnum = {
+  taking_up_employment: "taking_up_employment",
+  date_of_signing_contract: "date_of_signing_contract",
+  start_contract_time: "start_contract_time",
+  end_contract_time: "end_contract_time",
+  type_of_contract: "type_of_contract",
+  working_time: "working_time",
+  up_to_4_weeks: "up_to_4_weeks",
+  up_to_3_months: "up_to_3_months",
+  subject_matter_agreement: "subject_matter_agreement",
+  continuation_after_3_months: "continuation_after_3_months",
+  change_form_of_employment: "change_form_of_employment",
+  company_name: "company_name",
+  zip_code: "zip_code",
+  city: "city",
+  street: "street",
+  number: "number",
+  nip: "nip",
+  position: "position",
+};
+
+export const endParticipationProjectEnum = {
+  end_of_project: "end_of_project",
+  compatible_path: "compatible_path",
+  supporting_document: "supporting_document",
+  document_date: "document_date",
+  supporting_document_to_3_month: "supporting_document_to_3_month",
+};
+
+export const payoutsEnum = {
+  type_of_list: "type_of_list",
+  project: "project",
+  training: "training",
+  group_number: "group_number",
+  start_term: "start_term",
+  end_term: "end_term",
+  payroll_number: "payroll_number",
+  date_of_issue: "date_of_issue",
+};

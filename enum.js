@@ -116,7 +116,7 @@ export const trainingEnum = {
   comments: "comments",
 };
 
-export const jobIntermendiationEnum = {
+export const jobIntermediationEnum = {
   session: "session",
   type_of_brokerage: "type_of_brokerage",
   employment_agent: "employment_agent",

@@ -30,7 +30,7 @@ export const defaultValues: IValidator = {
   [personalEnum.assigned_project]: 1,
   [personalEnum.black_list]: 0,
   [personalEnum.marketing_agreement]: 0,
-  [personalEnum.shiping_agreement]: 0,
+  [personalEnum.shipping_agreement]: 0,
   [personalEnum.sub_region]: 0,
   [personalEnum.osi]: 0,
   [personalEnum.zit]: 0,

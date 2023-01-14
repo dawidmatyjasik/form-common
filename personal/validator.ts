@@ -33,7 +33,7 @@ export const validator = object({
   [personalEnum.mailing_voivodeship]: string().optional(),
   [personalEnum.black_list]: number().optional(),
   [personalEnum.marketing_agreement]: number().optional(),
-  [personalEnum.shiping_agreement]: number().optional(),
+  [personalEnum.shipping_agreement]: number().optional(),
   [personalEnum.assigned_project]: number().optional(),
   [personalEnum.sub_region]: number().optional(),
   [personalEnum.osi]: number().optional(),

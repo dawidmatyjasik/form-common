@@ -40,6 +40,40 @@ export const loginEnum = {
   password: "password",
 };
 
+export const projectParcipiantEnum = {
+  form_submission: "form_submission",
+  date_of_signing_agreement: "date_of_signing_agreement",
+  years_age: "years_age",
+  months_age: "months_age",
+  education: "education",
+  disability: "disability",
+  disability_level: "disability_level",
+  market_status: "market_status",
+  working_person: "working_person",
+  working_company_adress: "working_company_adress",
+  working_street: "working_street",
+  working_street_number: "working_street_number",
+  working_zip_code: "working_zip_code",
+  working_city: "working_city",
+  working_workplace: "working_workplace",
+  working_classification: "working_classification",
+  working_classification_other: "working_classification_other",
+  working_period_from: "working_period_from",
+  working_period_to: "working_period_to",
+  working_type: "working_type",
+  working_type_nip: "working_type_nip",
+  unemployment: "unemployment",
+  months_of_unemployment: "months_of_unemployment",
+  bank_account_number: "bank_account_number",
+  national_minority: "national_minority",
+  homeless: "homeless",
+  adverse_social_situation: "adverse_social_situation",
+  ct9: "ct9",
+  penalty_of_liberty: "penalty_of_liberty",
+  farming: "farming",
+  social_security: "social_security",
+};
+
 export const ComponentEnum = {
   FormInput: "FormInput",
   FormCheckbox: "FormCheckbox",
@@ -49,6 +83,8 @@ export const ComponentEnum = {
   FormSelect: "FormSelect",
   FormSwitch: "FormSwitch",
   FormInputMask: "FormInputMask",
+  FormHeader: "FormHeader",
+  FormSubHeader: "FormSubHeader",
 };
 
 export const trainingEnum = {

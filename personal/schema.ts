@@ -2,7 +2,11 @@ import { ComponentEnum, personalEnum } from "../enum";
 import { gender, mailing, projects } from "../mocks";
 import { referer } from "../utils";
 
-export const personalSchema = [
+export const schema = [
+  {
+    component: ComponentEnum.FormHeader,
+    label: "Dane osobowe",
+  },
   {
     component: ComponentEnum.FormInput,
     label: "Nazwisko",
@@ -32,7 +36,7 @@ export const personalSchema = [
     name: personalEnum.place_of_birth,
   },
   {
-    component: ComponentEnum.FormSelect,
+    component: ComponentEnum.FormRadio,
     label: "Płeć",
     name: personalEnum.gender,
     options: gender,

@@ -1,18 +1,18 @@
 import { date, object, TypeOf, string, number } from "zod";
 import { personalEnum } from "../enum";
 
-export const personalValidator = object({
-  [personalEnum.last_name]: string().optional(),
-  [personalEnum.first_name]: string().optional(),
+export const validator = object({
+  [personalEnum.last_name]: string(),
+  [personalEnum.first_name]: string(),
   [personalEnum.pesel]: string()
-    .length(11, "Numer pesel jest nieprawidłowy")
+    // .length(11, "Numer pesel jest nieprawidłowy")
     .optional(),
   [personalEnum.date_of_birth]: date().optional(),
   [personalEnum.place_of_birth]: string().optional(),
   [personalEnum.gender]: number().optional(),
   [personalEnum.phone_number]: string().trim().optional(),
   [personalEnum.email]: string()
-    .email("Adres email jest nieprawidłowy")
+    // .email("Adres email jest nieprawidłowy")
     .optional(),
   [personalEnum.street]: string().optional(),
   [personalEnum.street_number]: string().optional(),
@@ -42,11 +42,4 @@ export const personalValidator = object({
   [personalEnum.rural_area]: number().optional(),
 });
 
-/* 
-.refine((data) => data.password === data.confirmPassword, {
-  path: ["passwordConfirm"],
-  message: "Passwords do not match",
-}); 
-*/
-
-export type IPersonal = TypeOf<typeof personalValidator>;
+export type IValidator = TypeOf<typeof validator>;

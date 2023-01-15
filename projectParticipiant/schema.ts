@@ -1,4 +1,4 @@
-import { ComponentEnum, projectParcipiantEnum, personalEnum } from "../enum";
+import { ComponentEnum, projectParticipantEnum, personalEnum } from "../enum";
 import {
   choice,
   choiceApply,
@@ -22,7 +22,7 @@ export const schema = [
   {
     component: ComponentEnum.FormDatePicker,
     label: "Data rozpoczęcia",
-    name: projectParcipiantEnum.form_submission,
+    name: projectParticipantEnum.form_submission,
     dateProps: {
       disabled: true,
     },
@@ -36,7 +36,7 @@ export const schema = [
   {
     component: ComponentEnum.FormDatePicker,
     label: "Data zakończenia",
-    name: projectParcipiantEnum.form_submission,
+    name: projectParticipantEnum.form_submission,
     disabled: true,
     dateProps: {
       disabled: true,
@@ -51,220 +51,220 @@ export const schema = [
   {
     component: ComponentEnum.FormDatePicker,
     label: "Data złożenia formularza",
-    name: projectParcipiantEnum.form_submission,
+    name: projectParticipantEnum.form_submission,
   },
   {
     component: ComponentEnum.FormDatePicker,
     label: "Data podpisania umowy projektowej",
-    name: projectParcipiantEnum.form_submission,
+    name: projectParticipantEnum.form_submission,
   },
   {
     component: ComponentEnum.FormInput,
     label: "Lat w momencie przystąpienia do projektu",
-    name: projectParcipiantEnum.years_age,
+    name: projectParticipantEnum.years_age,
     type: "number",
     props: { xs: 12, sm: 6 },
   },
   {
     component: ComponentEnum.FormInput,
     label: "Miesięcy w momencie przystąpienia do projektu",
-    name: projectParcipiantEnum.months_age,
+    name: projectParticipantEnum.months_age,
     type: "number",
     props: { xs: 12, sm: 6 },
   },
   {
     component: ComponentEnum.FormSelect,
     label: "Deklarowanie wykształcenie (ISCED)",
-    name: projectParcipiantEnum.education,
+    name: projectParticipantEnum.education,
     options: education,
   },
   {
     component: ComponentEnum.FormSelect,
     label: "Niepełnosprawność",
-    name: projectParcipiantEnum.disability,
+    name: projectParticipantEnum.disability,
     options: disability,
   },
   {
     component: ComponentEnum.FormSelect,
     label: "Stopień niepełnosprawności",
-    name: projectParcipiantEnum.disability_level,
+    name: projectParticipantEnum.disability_level,
     options: disability_level,
     referer,
-    refs: [projectParcipiantEnum.disability], // add referer rules
+    refs: [projectParticipantEnum.disability], // add referer rules
   },
   {
     component: ComponentEnum.FormSelect,
     label: "Status na rynku pracy",
-    name: projectParcipiantEnum.market_status,
+    name: projectParticipantEnum.market_status,
     options: working_status,
   },
   {
     component: ComponentEnum.FormSelect,
     label: "Osoba pracująca",
-    name: projectParcipiantEnum.working_person,
+    name: projectParticipantEnum.working_person,
     options: working,
 
     referer,
-    refs: [projectParcipiantEnum.market_status], // add referer rules
+    refs: [projectParticipantEnum.market_status], // add referer rules
   },
   {
     component: ComponentEnum.FormInput,
     label: "Adres firmy",
-    name: projectParcipiantEnum.working_company_adress,
+    name: projectParticipantEnum.working_company_address,
     referer,
-    refs: [projectParcipiantEnum.market_status], // add referer rules
+    refs: [projectParticipantEnum.market_status], // add referer rules
   },
   {
     component: ComponentEnum.FormInput,
     label: "Ulica",
-    name: projectParcipiantEnum.working_street,
+    name: projectParticipantEnum.working_street,
     referer,
-    refs: [projectParcipiantEnum.market_status], // add referer rules
+    refs: [projectParticipantEnum.market_status], // add referer rules
   },
   {
     component: ComponentEnum.FormInput,
     label: "Numer",
-    name: projectParcipiantEnum.working_street_number,
+    name: projectParticipantEnum.working_street_number,
     referer,
-    refs: [projectParcipiantEnum.market_status], // add referer rules
+    refs: [projectParticipantEnum.market_status], // add referer rules
   },
   {
     component: ComponentEnum.FormInput,
     label: "Kod pocztowy",
-    name: projectParcipiantEnum.working_zip_code,
+    name: projectParticipantEnum.working_zip_code,
     referer,
-    refs: [projectParcipiantEnum.market_status], // add referer rules
+    refs: [projectParticipantEnum.market_status], // add referer rules
   },
   {
     component: ComponentEnum.FormInput,
     label: "Miasto",
-    name: projectParcipiantEnum.working_city,
+    name: projectParticipantEnum.working_city,
     referer,
-    refs: [projectParcipiantEnum.market_status], // add referer rules
+    refs: [projectParticipantEnum.market_status], // add referer rules
   },
   {
     component: ComponentEnum.FormInput,
     label: "Stanowisko pracy",
-    name: projectParcipiantEnum.working_workplace,
+    name: projectParticipantEnum.working_workplace,
     referer,
-    refs: [projectParcipiantEnum.market_status], // add referer rules
+    refs: [projectParticipantEnum.market_status], // add referer rules
   },
   {
     component: ComponentEnum.FormSelect,
     label: "Klasyfikacja zawodów",
-    name: projectParcipiantEnum.working_classification,
+    name: projectParticipantEnum.working_classification,
     options: working_classification,
     referer,
-    refs: [projectParcipiantEnum.market_status], // add referer rules
+    refs: [projectParticipantEnum.market_status], // add referer rules
   },
   {
     component: ComponentEnum.FormInput,
     label: "Jakie?",
-    name: projectParcipiantEnum.working_classification_other,
+    name: projectParticipantEnum.working_classification_other,
     referer,
-    refs: [projectParcipiantEnum.working_classification], // add referer rules
+    refs: [projectParticipantEnum.working_classification], // add referer rules
   },
   // TODO: title
   {
     component: ComponentEnum.FormDatePicker,
     label: "Od",
-    name: projectParcipiantEnum.working_period_from,
+    name: projectParticipantEnum.working_period_from,
     referer,
-    refs: [projectParcipiantEnum.market_status], // add referer rules
+    refs: [projectParticipantEnum.market_status], // add referer rules
     props: { xs: 12, sm: 6 },
   },
   {
     component: ComponentEnum.FormDatePicker,
     label: "Do",
-    name: projectParcipiantEnum.working_period_to,
+    name: projectParticipantEnum.working_period_to,
     referer,
-    refs: [projectParcipiantEnum.market_status], // add referer rules
+    refs: [projectParticipantEnum.market_status], // add referer rules
     props: { xs: 12, sm: 6 },
   },
   {
     component: ComponentEnum.FormSelect,
     label: "Rodzaj przedsiębiorstwa",
-    name: projectParcipiantEnum.working_type,
+    name: projectParticipantEnum.working_type,
     options: working_type,
 
     referer,
-    refs: [projectParcipiantEnum.market_status], // add referer rules
+    refs: [projectParticipantEnum.market_status], // add referer rules
   },
   {
     component: ComponentEnum.FormInput,
     label: "NIP",
-    name: projectParcipiantEnum.working_type_nip,
+    name: projectParticipantEnum.working_type_nip,
     referer,
-    refs: [projectParcipiantEnum.working_type], // add referer rules
+    refs: [projectParticipantEnum.working_type], // add referer rules
   },
   {
     component: ComponentEnum.FormSelect,
     label: "Osoba bezrobotna",
-    name: projectParcipiantEnum.unemployment,
+    name: projectParticipantEnum.unemployment,
     options: unemployment_type,
     referer,
-    refs: [projectParcipiantEnum.market_status], // add referer rules
+    refs: [projectParticipantEnum.market_status], // add referer rules
   },
   {
     component: ComponentEnum.FormInput,
     label: "Liczba miesięcy bezrobocia",
-    name: projectParcipiantEnum.months_of_unemployment,
+    name: projectParticipantEnum.months_of_unemployment,
     type: "number",
   },
   {
     //mask input
     component: ComponentEnum.FormInput,
     label: "Numer konta bankowego",
-    name: projectParcipiantEnum.bank_account_number,
+    name: projectParticipantEnum.bank_account_number,
     //add mask
   },
   {
     component: ComponentEnum.FormRadio,
     label:
       "Uczestnik należy do mniejszości narodowej, etnicznej, migrant, osoba obcego pochodzenia",
-    name: projectParcipiantEnum.national_minority,
+    name: projectParticipantEnum.national_minority,
     options: choiceRefusal,
     yesNo: true,
   },
   {
     component: ComponentEnum.FormSwitch,
     label: "Osoba bezdomna lub dotknięta wykluczeniem z dostępu do mieszkań",
-    name: projectParcipiantEnum.homeless,
+    name: projectParticipantEnum.homeless,
     options: choice,
     yesNo: true,
   },
   {
     component: ComponentEnum.FormRadio,
     label: "Znajduje się w innej niekorzystniej sytuacji społecznej",
-    name: projectParcipiantEnum.adverse_social_situation,
+    name: projectParticipantEnum.adverse_social_situation,
     options: choiceRefusal,
     yesNo: true,
   },
   {
     component: ComponentEnum.FormRadio,
     label: "Były uczestnik w ramach CT.9",
-    name: projectParcipiantEnum.ct9,
+    name: projectParticipantEnum.ct9,
     options: choiceApply,
     yesNo: true,
   },
   {
     component: ComponentEnum.FormSwitch,
     label: "Osoba odbywająca karę pozbawienia wolności",
-    name: projectParcipiantEnum.penalty_of_liberty,
+    name: projectParticipantEnum.penalty_of_liberty,
     options: choice,
     yesNo: true,
   },
   {
     component: ComponentEnum.FormRadio,
     label: "Osoba odchodąca z rolnictwa",
-    name: projectParcipiantEnum.farming,
+    name: projectParticipantEnum.farming,
     options: choiceApply,
     yesNo: true,
   },
   {
     component: ComponentEnum.FormRadio,
     label: "Czy uczestnik ma inny tytuł do ubezpieczeń społecznych",
-    name: projectParcipiantEnum.social_security,
+    name: projectParticipantEnum.social_security,
     options: choiceApply,
     yesNo: true,
   },

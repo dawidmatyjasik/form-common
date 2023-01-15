@@ -40,7 +40,7 @@ export const loginEnum = {
   password: "password",
 };
 
-export const projectParcipiantEnum = {
+export const projectParticipantEnum = {
   form_submission: "form_submission",
   date_of_signing_agreement: "date_of_signing_agreement",
   years_age: "years_age",
@@ -50,7 +50,7 @@ export const projectParcipiantEnum = {
   disability_level: "disability_level",
   market_status: "market_status",
   working_person: "working_person",
-  working_company_adress: "working_company_adress",
+  working_company_address: "working_company_address",
   working_street: "working_street",
   working_street_number: "working_street_number",
   working_zip_code: "working_zip_code",

@@ -18,8 +18,12 @@ export const projectParticipantValidator = {
     type: "integer",
     enum: [1, 2, 3, 4, 5, 6],
   },
-  [projectParticipantEnum.market_status]: { type: "integer" },
-  [projectParticipantEnum.working_person]: { type: "integer" }, // ?
+  [projectParticipantEnum.market_status]: { type: "integer", enum: [0, 1] },
+  [projectParticipantEnum.working_person]: { type: "integer" },
+  [projectParticipantEnum.working_person_type]: {
+    type: "integer",
+    enum: [1, 2, 3, 4, 5],
+  },
   [projectParticipantEnum.working_company_address]: { type: "string" },
   [projectParticipantEnum.working_street]: { type: "string" },
   [projectParticipantEnum.working_street_number]: { type: "string" },
@@ -29,7 +33,10 @@ export const projectParticipantValidator = {
   },
   [projectParticipantEnum.working_city]: { type: "string" },
   [projectParticipantEnum.working_workplace]: { type: "string" },
-  [projectParticipantEnum.working_classification]: { type: "integer" },
+  [projectParticipantEnum.working_classification]: {
+    type: "integer",
+    enum: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+  },
   [projectParticipantEnum.working_classification_other]: { type: "string" },
   [projectParticipantEnum.working_period_from]: {
     type: "string",
@@ -39,11 +46,15 @@ export const projectParticipantValidator = {
     type: "string",
     format: "date",
   },
-  [projectParticipantEnum.working_type]: { type: "integer" },
+  [projectParticipantEnum.working_type]: {
+    type: "integer",
+    enum: [1, 2, 3, 4, 5, 6, 7, 8],
+  },
   [projectParticipantEnum.working_type_nip]: { type: "string" },
+  [projectParticipantEnum.working_type_other]: { type: "string" },
   [projectParticipantEnum.unemployment]: {
     type: "integer",
-    // enum: [0, 1],
+    enum: [0, 1],
   },
   [projectParticipantEnum.months_of_unemployment]: { type: "string" },
   [projectParticipantEnum.bank_account_number]: { type: "string" },
@@ -64,7 +75,9 @@ export const projectParticipantValidator = {
   [projectParticipantEnum.farming]: { type: "integer", enum: [0, 1, 2] },
   [projectParticipantEnum.social_security]: {
     type: "integer",
-    // enum: [0, 1, 2],
+    enum: [0, 1, 2],
   },
-  // [projectParticipantEnum.social_security]: number().nullable().optional(),
+  [projectParticipantEnum.social_security_type]: {
+    type: "string",
+  },
 };

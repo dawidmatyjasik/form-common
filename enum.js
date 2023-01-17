@@ -50,6 +50,7 @@ export const projectParticipantEnum = {
   disability_level: "disability_level",
   market_status: "market_status",
   working_person: "working_person",
+  working_person_type: "working_person_type",
   working_company_address: "working_company_address",
   working_street: "working_street",
   working_street_number: "working_street_number",
@@ -62,6 +63,7 @@ export const projectParticipantEnum = {
   working_period_to: "working_period_to",
   working_type: "working_type",
   working_type_nip: "working_type_nip",
+  working_type_other: "working_type_other",
   unemployment: "unemployment",
   months_of_unemployment: "months_of_unemployment",
   bank_account_number: "bank_account_number",
@@ -72,6 +74,7 @@ export const projectParticipantEnum = {
   penalty_of_liberty: "penalty_of_liberty",
   farming: "farming",
   social_security: "social_security",
+  social_security_type: "social_security_type",
 };
 
 export const ComponentEnum = {

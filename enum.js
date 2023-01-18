@@ -72,6 +72,7 @@ export const projectParticipantEnum = {
   penalty_of_liberty: "penalty_of_liberty",
   farming: "farming",
   social_security: "social_security",
+  social_security_type: "social_security_type",
 };
 
 export const ComponentEnum = {

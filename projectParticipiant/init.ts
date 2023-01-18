@@ -1,7 +1,6 @@
 import { projectParticipantEnum } from "../enum";
-import { IValidator } from "./validator";
 
-export const defaultValues: IValidator = {
+export const defaultValues = {
   [projectParticipantEnum.form_submission]: new Date(),
   [projectParticipantEnum.date_of_signing_agreement]: new Date(),
   [projectParticipantEnum.years_age]: "",

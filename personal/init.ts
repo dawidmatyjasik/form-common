@@ -1,7 +1,6 @@
 import { personalEnum } from "../enum";
-import { IValidator } from "./validator";
 
-export const defaultValues: IValidator = {
+export const defaultValues = {
   [personalEnum.last_name]: "",
   [personalEnum.first_name]: "",
   [personalEnum.pesel]: "",

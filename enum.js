@@ -287,3 +287,12 @@ export const payoutsEnum = {
   payroll_number: "payroll_number",
   date_of_issue: "date_of_issue",
 };
+
+export const errorsEnum = {
+  required: "Pole wymagane",
+  minLength: "Treść pola za krótka",
+  maxLength: "Treść pola za długa",
+  pattern: "Nieprawidłowa forma",
+  format: "Nieprawidłowa forma",
+  type: "Niezgodny typ danych",
+};

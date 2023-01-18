@@ -1,7 +1,6 @@
-// import { date, object, TypeOf, string, number } from "zod";
 import { projectParticipantEnum } from "../enum";
 
-export const projectParticipantValidator = {
+export const validator = {
   [projectParticipantEnum.form_submission]: { type: "string", format: "date" },
   [projectParticipantEnum.date_of_signing_agreement]: {
     type: "string",

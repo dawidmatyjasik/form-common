@@ -1,6 +1,6 @@
 import { personalEnum } from "../enum.js";
 
-export const personalValidator = {
+export const validator = {
   type: "object",
   required: ["last_name", "first_name"],
   properties: {

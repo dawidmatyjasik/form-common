@@ -1,4 +1,4 @@
-import { projectParticipantEnum } from "../enum";
+import { projectParticipantEnum } from "../enum.js";
 
 export const validator = {
   [projectParticipantEnum.form_submission]: { type: "string", format: "date" },

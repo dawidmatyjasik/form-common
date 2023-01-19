@@ -2,14 +2,16 @@ import { projectParticipantEnum } from "../enum.js";
 
 export const validator = {
   type: "object",
+  required: ["last_name", "first_name"],
   properties: {
     [projectParticipantEnum.form_submission]: {
       type: "string",
-      format: "date",
+      pattern: "^$|^[0-3]?[0-9].[0-3]?[0-9].(?:[0-9]{2})?[0-9]{2}$",
     },
     [projectParticipantEnum.date_of_signing_agreement]: {
-      type: "string",
-      format: "date",
+      format: "date-time",
+      pattern:
+        "^[0-9]{4}-((0[13578]|1[02])-(0[1-9]|[12][0-9]|3[01])|(0[469]|11)-(0[1-9]|[12][0-9]|30)|(02)-(0[1-9]|[12][0-9]))T(0[0-9]|1[0-9]|2[0-3]):(0[0-9]|[1-5][0-9]):(0[0-9]|[1-5][0-9]).[0-9]{3}Z$",
     },
     [projectParticipantEnum.years_age]: { type: "string" },
     [projectParticipantEnum.months_age]: { type: "string" },
@@ -43,12 +45,14 @@ export const validator = {
     },
     [projectParticipantEnum.working_classification_other]: { type: "string" },
     [projectParticipantEnum.working_period_from]: {
-      type: "string",
-      format: "date",
+      format: "date-time",
+      pattern:
+        "^[0-9]{4}-((0[13578]|1[02])-(0[1-9]|[12][0-9]|3[01])|(0[469]|11)-(0[1-9]|[12][0-9]|30)|(02)-(0[1-9]|[12][0-9]))T(0[0-9]|1[0-9]|2[0-3]):(0[0-9]|[1-5][0-9]):(0[0-9]|[1-5][0-9]).[0-9]{3}Z$",
     },
     [projectParticipantEnum.working_period_to]: {
-      type: "string",
-      format: "date",
+      format: "date-time",
+      pattern:
+        "^[0-9]{4}-((0[13578]|1[02])-(0[1-9]|[12][0-9]|3[01])|(0[469]|11)-(0[1-9]|[12][0-9]|30)|(02)-(0[1-9]|[12][0-9]))T(0[0-9]|1[0-9]|2[0-3]):(0[0-9]|[1-5][0-9]):(0[0-9]|[1-5][0-9]).[0-9]{3}Z$",
     },
     [projectParticipantEnum.working_type]: {
       type: "integer",
@@ -82,7 +86,8 @@ export const validator = {
       enum: [0, 1, 2],
     },
     [projectParticipantEnum.social_security_type]: {
-      type: "string",
+      type: "integer",
+      enum: [1, 2, 3, 4, 5],
     },
   },
 };

@@ -105,8 +105,11 @@ export const trainingEnum = {
   city: "city",
   business: "business",
   medicine_work: "medicine_work",
+  medicine_work_date: "medicine_work_date",
+  health_department_date: "health_department_date",
   health_department: "health_department",
   psychological: "psychological",
+  psychological_date: "psychological_date",
   registration_zus: "registration_zus",
   announcement_zus: "announcement_zus",
   nnw_start: "nnw_start",
@@ -152,7 +155,6 @@ export const trainingEnum = {
   care_cost_request: "care_cost_request",
   statement_to_policy_nnw: "statement_to_policy_nnw",
   evaluation_survey: "evaluation_survey",
-  comments: "comments",
 };
 
 export const jobIntermediationEnum = {

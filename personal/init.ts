@@ -17,7 +17,7 @@ export const defaultValues = {
   [personalEnum.county]: "",
   [personalEnum.community]: "",
   [personalEnum.voivodeship]: "",
-  [personalEnum.mailing_address]: 0,
+  [personalEnum.mailing_address]: 1,
   [personalEnum.mailing_street]: "",
   [personalEnum.mailing_street_number]: "",
   [personalEnum.mailing_apartment_number]: "",

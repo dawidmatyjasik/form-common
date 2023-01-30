@@ -316,3 +316,75 @@ export const employerEnum = {
   kfs: "kfs",
   commercial: "commercial",
 };
+
+// export const cadreEnum = {
+//   first_name: "first_name",
+//   last_name: "last_name",
+// };
+
+export const newProjectEnum = {
+  name: "name",
+  number: "number",
+  beneficiary: "beneficiary",
+  beneficiary_for: "beneficiary_for",
+  partner: "partner",
+  partner_for: "partner_for",
+  start_project: "start_project",
+  end_project: "end_project",
+  extension: "extension", // date or null?
+  contract_number: "contract_number",
+  contract_date: "contract_date",
+  operational_programme: "operational_programme",
+  guardian: "guardian",
+  guardian_from: "guardian_from",
+  guardian_to: "guardian_to",
+  manager: "manager",
+  manager_from: "manager_from",
+  manager_to: "manager_to",
+  coordinator_first_name: "coordinator_first_name",
+  coordinator_last_name: "coordinator_last_name",
+  coordinator_from: "coordinator_from",
+  coordinator_to: "coordinator_to",
+  authorized_to_sl_lsi: "authorized_to_sl_lsi",
+  bank_access: "bank_access",
+  web_page: "web_page",
+  project_email: "project_email",
+  zus_rate: "zus_rate",
+  rate_per_hour: "rate_per_hour",
+  internship_rate: "internship_rate",
+  theme_area: "theme_area",
+  market_status: "market_status",
+  osi: "osi",
+  sub_region: "sub_region",
+  medium_city: "medium_city",
+  zit: "zit",
+  reckoning: "reckoning",
+};
+
+export const guardianEnum = {
+  first_name: "first_name",
+  last_name: "last_name",
+  phone_number: "phone_number",
+  email: "email",
+};
+
+export const managerEnum = {
+  first_name: "first_name",
+  last_name: "last_name",
+};
+
+export const AuthorizedToSlEnum = {
+  first_name: "first_name",
+  last_name: "last_name",
+  giving: "giving",
+  status: "status",
+  withdrawal: "withdrawal",
+};
+
+export const bankAccessEnum = {
+  first_name: "first_name",
+  last_name: "last_name",
+  giving: "giving",
+  status: "status",
+  withdrawal: "withdrawal",
+};

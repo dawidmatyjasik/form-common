@@ -98,7 +98,6 @@ export const schema = [
     label: "Adres korespondencyjny",
     name: personalEnum.mailing_address,
     options: mailing,
-    yesNo: true,
   },
   {
     component: ComponentEnum.FormInput,

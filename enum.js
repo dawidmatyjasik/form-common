@@ -103,7 +103,7 @@ export const trainingEnum = {
   house_number: "house_number",
   apartment_number: "apartment_number",
   city: "city",
-  business: "business",
+  // business: "business",
   medicine_work: "medicine_work",
   medicine_work_date: "medicine_work_date",
   health_department_date: "health_department_date",
@@ -297,4 +297,22 @@ export const errorsEnum = {
   pattern: "Nieprawidłowa forma",
   format: "Nieprawidłowa forma",
   type: "Niezgodny typ danych",
+};
+
+export const employerEnum = {
+  name: "name",
+  street: "street",
+  street_number: "street_number",
+  apartment_number: "apartment_number",
+  zip_code: "zip_code",
+  city: "city",
+  nip: "nip",
+  first_name: "first_name",
+  last_name: "last_name",
+  phone_number: "phone_number",
+  industry: "industry",
+  interns: "interns",
+  bur: "bur",
+  kfs: "kfs",
+  commercial: "commercial",
 };

@@ -322,7 +322,7 @@ export const employerEnum = {
 //   last_name: "last_name",
 // };
 
-export const newProjectEnum = {
+export const projectEnum = {
   name: "name",
   number: "number",
   beneficiary: "beneficiary",

@@ -1,4 +1,8 @@
-export const referer = (methods: any, refs: string[]) => {
+export const referer = (
+  methods: any,
+  refs: string[],
+  destination: number = 1
+) => {
   const arr = methods.watch([...refs]);
-  return arr.every((val: number) => val === 0);
+  return arr.every((val: number) => val === destination);
 };

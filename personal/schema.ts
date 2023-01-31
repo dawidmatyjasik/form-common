@@ -1,5 +1,5 @@
 import { ComponentEnum, personalEnum } from "../enum";
-import { gender, mailing, projects } from "../mocks";
+import { genderEnum, mailing, mailingEnum, projectsEnum } from "../mocks";
 import { referer } from "../utils";
 
 export const schema = [
@@ -39,7 +39,7 @@ export const schema = [
     component: ComponentEnum.FormRadio,
     label: "Płeć",
     name: personalEnum.gender,
-    options: gender,
+    options: genderEnum,
   },
   {
     component: ComponentEnum.FormInputMask,
@@ -97,7 +97,7 @@ export const schema = [
     component: ComponentEnum.FormSelect,
     label: "Adres korespondencyjny",
     name: personalEnum.mailing_address,
-    options: mailing,
+    options: mailingEnum,
   },
   {
     component: ComponentEnum.FormInput,
@@ -160,7 +160,7 @@ export const schema = [
     component: ComponentEnum.FormSelect,
     label: "Przypisz projekt",
     name: personalEnum.assigned_project,
-    options: projects,
+    options: projectsEnum,
   },
   {
     component: ComponentEnum.FormSwitch,

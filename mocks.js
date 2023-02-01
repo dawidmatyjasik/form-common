@@ -1,58 +1,110 @@
+
 export const gender = {
-  1: "Mężczyzna",
-  2: "Kobieta",
-  3: "Neutralny",
+  male: 1,
+  female: 2,
+  neutral: 3,
+}
+
+export const genderEnum = {
+  [gender.male]: "Mężczyzna",
+  [gender.female]: "Kobieta",
+  [gender.neutral]: "Neutralny",
 };
 
 export const choice = {
-  0: "Nie",
-  1: "Tak",
+  no: 0,
+  yes: 1,
+};
+
+export const choiceEnum = {
+  [choice.no]: "Nie",
+  [choice.yes]: "Tak",
 };
 
 export const choiceRefusal = {
-  0: "Nie",
-  1: "Tak",
-  2: "Omowa podania informacji",
+  no: 0,
+  yes: 1,
+  refusal: 2,
+};
+
+export const choiceRefusalEnum = {
+  [choice.no]: "Nie",
+  [choice.yes]: "Tak",
+  [choice.refusal]: "Omowa podania informacji",
 };
 
 export const choiceApply = {
-  0: "Nie",
-  1: "Tak",
-  2: "Nie dotyczy",
+  no: 0,
+  yes: 1,
+  not_applicable: 2,
 };
 
-export const projects = {
+export const choiceApplyEnum = {
+  [choiceApply.no]: "Nie",
+  [choiceApply.yes]: "Tak",
+  [choiceApply.not_applicable]: "Nie dotyczy",
+};
+
+export const projectsEnum = {
   1: "Projekt1",
   2: "Projekt2",
   3: "Projekt3",
 };
 
 export const mailing = {
-  1: "Jak zamieszkania",
-  2: "Inny",
+  same: 1,
+  other: 2,
+};
+
+export const mailingEnum = {
+  [mailing.same]: "Jak zamieszkania",
+  [mailing.other]: "Inny",
 };
 
 export const education = {
-  1: "Podstawowe (ISCED 1)",
-  2: "Gimnazjalne (ISCED 2)",
-  3: "Ponadgimnazjalne - liceum, technikum, szkoła zawodowa (ISCED 3)",
-  4: "Policealne (ISCED 4)",
-  5: "Wyższe (ISCED 5-8)",
+  primary: 1,
+  junior: 2,
+  mid: 3,
+  high: 4,
+  higher: 5,
 };
 
-export const disability = {
-  1: "Brak",
-  2: "Stopień lekki",
-  3: "Stopień umiarkowany",
-  4: "Stopień znaczny",
-  5: "Odmowa podania informacji",
+export const educationEnum = {
+  [education.primary]: "Podstawowe (ISCED 1)",
+  [education.junior]: "Gimnazjalne (ISCED 2)",
+  [education.mid]: "Ponadgimnazjalne - liceum, technikum, szkoła zawodowa (ISCED 3)",
+  [education.high]: "Policealne (ISCED 4)",
+  [education.higher]: "Wyższe (ISCED 5-8)",
 };
 
-export const disability_level = {
-  1: "Orzeczenie o niepełnosprawności",
-  2: "Orzeczenie lek. ZUS",
-  3: "Orzeczenie lek. KRUS",
-  4: "Orzeczenie lub opinia o stanie zdrowia psychicznego",
+const disability = {
+  no: 1,
+  light: 2,
+  moderate: 3,
+  considerable: 4,
+  refusal: 5,
+}
+
+export const disabilityEnum = {
+  [disability.no]: "Brak",
+  [disability.light]: "Stopień lekki",
+  [disability.moderate]: "Stopień umiarkowany",
+  [disability.considerable]: "Stopień znaczny",
+  [disability.refusal]: "Odmowa podania informacji",
+};
+
+const disabilityLevel = {
+  disability: 1,
+  zus: 2,
+  krus: 3,
+  opinion: 4,
+}
+
+export const disabilityLevelEnum = {
+  [disabilityLevel.disability]: "Orzeczenie o niepełnosprawności",
+  [disabilityLevel.zus]: "Orzeczenie lek. ZUS",
+  [disabilityLevel.krus]: "Orzeczenie lek. KRUS",
+  [disabilityLevel.opinion]: "Orzeczenie lub opinia o stanie zdrowia psychicznego",
 };
 
 export const workingStatus = {

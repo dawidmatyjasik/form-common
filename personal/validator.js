@@ -19,7 +19,7 @@ export const validator = {
     [personalEnum.gender]: { type: "integer", enum: [1, 2, 3] },
     [personalEnum.phone_number]: {
       type: "string",
-      pattern: "^$|[0-9]{9}$",
+      pattern: "^$|^[0-9]{9}$",
     },
     [personalEnum.email]: { type: "string", format: "email" },
     [personalEnum.street]: { type: "string" },

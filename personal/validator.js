@@ -1,8 +1,5 @@
 import { personalEnum } from "../enum.js";
 
-const dataPattern =
-  "^[0-9]{4}-((0[13578]|1[02])-(0[1-9]|[12][0-9]|3[01])|(0[469]|11)-(0[1-9]|[12][0-9]|30)|(02)-(0[1-9]|[12][0-9]))T(0[0-9]|1[0-9]|2[0-3]):(0[0-9]|[1-5][0-9]):(0[0-9]|[1-5][0-9]).[0-9]{3}Z$";
-
 export const validator = {
   type: "object",
   required: ["last_name", "first_name"],
@@ -12,8 +9,7 @@ export const validator = {
     [personalEnum.pesel]: { type: "string", minLength: 11, maxLength: 11 },
     [personalEnum.date_of_birth]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [personalEnum.place_of_birth]: { type: "string" },
     [personalEnum.gender]: { type: "integer", enum: [1, 2, 3] },

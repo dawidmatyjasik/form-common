@@ -1,8 +1,5 @@
 import { trainingEnum } from "../enum.js";
 
-const dataPattern =
-  "^[0-9]{4}-((0[13578]|1[02])-(0[1-9]|[12][0-9]|3[01])|(0[469]|11)-(0[1-9]|[12][0-9]|30)|(02)-(0[1-9]|[12][0-9]))T(0[0-9]|1[0-9]|2[0-3]):(0[0-9]|[1-5][0-9]):(0[0-9]|[1-5][0-9]).[0-9]{3}Z$";
-
 const uuidPattern =
   "^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$";
 
@@ -17,13 +14,11 @@ export const validator = {
     },
     [trainingEnum.start_training]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.end_training]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.hours_training]: {
       type: "string",
@@ -55,8 +50,7 @@ export const validator = {
     },
     [trainingEnum.medicine_work_date]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.health_department]: {
       type: "integer",
@@ -64,8 +58,7 @@ export const validator = {
     },
     [trainingEnum.health_department_date]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.psychological]: {
       type: "integer",
@@ -73,28 +66,23 @@ export const validator = {
     },
     [trainingEnum.psychological_date]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.registration_zus]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.announcement_zus]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.nnw_start]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.nnw_end]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.digital_competence]: {
       type: "integer",
@@ -106,8 +94,7 @@ export const validator = {
     },
     [trainingEnum.date_of_exam]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.score_of_exam]: {
       type: "integer",
@@ -135,13 +122,11 @@ export const validator = {
     },
     [trainingEnum.scholarship_from]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.scholarship_to]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.scholarship_sum]: {
       type: "string",
@@ -153,8 +138,7 @@ export const validator = {
     },
     [trainingEnum.scholarship_date]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.travel_cost]: {
       type: "integer",
@@ -162,13 +146,11 @@ export const validator = {
     },
     [trainingEnum.travel_cost_from]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.travel_cost_to]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.travel_cost_sum]: {
       type: "string",
@@ -180,8 +162,7 @@ export const validator = {
     },
     [trainingEnum.travel_cost_date]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.cost_of_care]: {
       type: "integer",
@@ -189,13 +170,11 @@ export const validator = {
     },
     [trainingEnum.cost_of_care_from]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.cost_of_care_to]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.cost_of_care_sum]: {
       type: "string",
@@ -207,8 +186,7 @@ export const validator = {
     },
     [trainingEnum.cost_of_care_date]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [trainingEnum.attendance_list]: {
       type: "integer",

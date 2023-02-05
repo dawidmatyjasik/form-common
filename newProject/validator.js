@@ -1,8 +1,5 @@
 import { newProjectEnum } from "../enum";
 
-const dataPattern =
-  "^[0-9]{4}-((0[13578]|1[02])-(0[1-9]|[12][0-9]|3[01])|(0[469]|11)-(0[1-9]|[12][0-9]|30)|(02)-(0[1-9]|[12][0-9]))T(0[0-9]|1[0-9]|2[0-3]):(0[0-9]|[1-5][0-9]):(0[0-9]|[1-5][0-9]).[0-9]{3}Z$";
-
 export const validator = {
   type: "object",
   properties: {
@@ -14,60 +11,49 @@ export const validator = {
     [newProjectEnum.partner_for]: { type: "integer", enum: [0, 1] },
     [newProjectEnum.start_project]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [newProjectEnum.end_project]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [newProjectEnum.extension]: {
-      // ?
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [newProjectEnum.contract_number]: { type: "string" },
     [newProjectEnum.contract_date]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [newProjectEnum.operational_programme]: { type: "string" }, // lub enum??????
     [newProjectEnum.guardian]: { type: "string" }, //uuid
     [newProjectEnum.guardian_from]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [newProjectEnum.guardian_to]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [newProjectEnum.manager]: { type: "string" }, //uuid
     [newProjectEnum.manager_from]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [newProjectEnum.manager_to]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [newProjectEnum.coordinator_first_name]: { type: "string" },
     [newProjectEnum.coordinator_last_name]: { type: "string" },
     [newProjectEnum.coordinator_from]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [newProjectEnum.coordinator_to]: {
       type: "string",
-      format: "date-time",
-      pattern: dataPattern,
+      format: "date",
     },
     [newProjectEnum.authorized_to_sl_lsi]: { type: "string" }, //uuid
     [newProjectEnum.bank_access]: { type: "string" }, //uuid

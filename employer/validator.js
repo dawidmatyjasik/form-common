@@ -31,7 +31,7 @@ export const validator = {
     [employerEnum.last_name]: { type: "string", minLength: 3 },
     [employerEnum.phone_number]: {
       type: "string",
-      pattern: "^$|[0-9]{9}$",
+      pattern: "^$|^[0-9]{9}$",
     },
     [employerEnum.industry]: {
       type: "string",

@@ -1,8 +1,8 @@
 export const referer = (
   methods: any,
-  refs: string[],
-  destination: number = 1
+  refs: string,
+  destinations: number[] = [1]
 ) => {
-  const arr = methods.watch([...refs]);
-  return arr.every((val: number) => val === destination);
+  const value = methods.watch(refs);
+  return destinations.some((el) => el === value);
 };

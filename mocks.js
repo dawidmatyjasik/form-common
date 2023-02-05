@@ -77,7 +77,7 @@ export const educationEnum = {
   [education.higher]: "Wyższe (ISCED 5-8)",
 };
 
-const disability = {
+export const disability = {
   no: 1,
   light: 2,
   moderate: 3,

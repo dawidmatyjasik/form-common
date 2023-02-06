@@ -1,7 +1,12 @@
 import { ComponentEnum, personalEnum } from "../enum";
-import { gender, mailing, projects } from "../mocks";
+import { genderEnum, mailing, mailingEnum, projectsEnum } from "../mocks";
+import { referer } from "../utils";
 
-export const personalSchema = [
+export const schema = [
+  {
+    component: ComponentEnum.FormHeader,
+    label: "Dane osobowe",
+  },
   {
     component: ComponentEnum.FormInput,
     label: "Nazwisko",
@@ -31,10 +36,10 @@ export const personalSchema = [
     name: personalEnum.place_of_birth,
   },
   {
-    component: ComponentEnum.FormSelect,
+    component: ComponentEnum.FormRadio,
     label: "Płeć",
     name: personalEnum.gender,
-    options: gender,
+    options: genderEnum,
   },
   {
     component: ComponentEnum.FormInputMask,
@@ -92,13 +97,70 @@ export const personalSchema = [
     component: ComponentEnum.FormSelect,
     label: "Adres korespondencyjny",
     name: personalEnum.mailing_address,
-    options: mailing,
+    options: mailingEnum,
+  },
+  {
+    component: ComponentEnum.FormInput,
+    label: "Ulica",
+    name: personalEnum.mailing_street,
+    referer,
+    refs: personalEnum.mailing_address,
+  },
+  {
+    component: ComponentEnum.FormInput,
+    label: "Numer domu",
+    name: personalEnum.mailing_street_number,
+    referer,
+    refs: personalEnum.mailing_address,
+  },
+  {
+    component: ComponentEnum.FormInput,
+    label: "Numer lokalu",
+    name: personalEnum.mailing_apartment_number,
+    referer,
+    refs: personalEnum.mailing_address,
+  },
+  {
+    component: ComponentEnum.FormInput,
+    label: "Miejscowość",
+    name: personalEnum.mailing_city,
+    referer,
+    refs: personalEnum.mailing_address,
+  },
+  {
+    component: ComponentEnum.FormInputMask,
+    label: "Kod pocztowy",
+    name: personalEnum.mailing_zip_code,
+    mask: "99-999",
+    referer,
+    refs: personalEnum.mailing_address,
+  },
+  {
+    component: ComponentEnum.FormInput,
+    label: "Powiat",
+    name: personalEnum.mailing_county,
+    referer,
+    refs: personalEnum.mailing_address,
+  },
+  {
+    component: ComponentEnum.FormInput,
+    label: "Gmina",
+    name: personalEnum.mailing_community,
+    referer,
+    refs: personalEnum.mailing_address,
+  },
+  {
+    component: ComponentEnum.FormInput,
+    label: "Województwo",
+    name: personalEnum.mailing_voivodeship,
+    referer,
+    refs: personalEnum.mailing_address,
   },
   {
     component: ComponentEnum.FormSelect,
     label: "Przypisz projekt",
     name: personalEnum.assigned_project,
-    options: projects,
+    options: projectsEnum,
   },
   {
     component: ComponentEnum.FormSwitch,
@@ -113,7 +175,7 @@ export const personalSchema = [
   {
     component: ComponentEnum.FormSwitch,
     label: "Zgoda na elektroniczną wysyłkę ZUS RMUA",
-    name: personalEnum.shiping_agreement,
+    name: personalEnum.shipping_agreement,
   },
   {
     component: ComponentEnum.FormSwitch,

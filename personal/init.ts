@@ -1,13 +1,12 @@
 import { personalEnum } from "../enum";
-import { ILogin } from "./validator";
 
-export const defaultValues: ILogin = {
+export const defaultValues = {
   [personalEnum.last_name]: "",
   [personalEnum.first_name]: "",
   [personalEnum.pesel]: "",
   [personalEnum.date_of_birth]: new Date(),
   [personalEnum.place_of_birth]: "",
-  [personalEnum.gender]: "",
+  [personalEnum.gender]: 1,
   [personalEnum.phone_number]: "",
   [personalEnum.email]: "",
   [personalEnum.street]: "",
@@ -18,7 +17,7 @@ export const defaultValues: ILogin = {
   [personalEnum.county]: "",
   [personalEnum.community]: "",
   [personalEnum.voivodeship]: "",
-  [personalEnum.mailing_address]: "",
+  [personalEnum.mailing_address]: 1,
   [personalEnum.mailing_street]: "",
   [personalEnum.mailing_street_number]: "",
   [personalEnum.mailing_apartment_number]: "",
@@ -27,12 +26,13 @@ export const defaultValues: ILogin = {
   [personalEnum.mailing_county]: "",
   [personalEnum.mailing_community]: "",
   [personalEnum.mailing_voivodeship]: "",
-  [personalEnum.black_list]: "",
-  [personalEnum.marketing_agreement]: "",
-  [personalEnum.shiping_agreement]: "",
-  [personalEnum.assigned_project]: "",
-  [personalEnum.sub_region]: "",
-  [personalEnum.osi]: "",
-  [personalEnum.medium_city]: "",
-  [personalEnum.rural_area]: "",
+  [personalEnum.assigned_project]: 1,
+  [personalEnum.black_list]: 0,
+  [personalEnum.marketing_agreement]: 0,
+  [personalEnum.shipping_agreement]: 0,
+  [personalEnum.sub_region]: 0,
+  [personalEnum.osi]: 0,
+  [personalEnum.zit]: 0,
+  [personalEnum.medium_city]: 0,
+  [personalEnum.rural_area]: 0,
 };
